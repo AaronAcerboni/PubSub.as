@@ -7,15 +7,34 @@ Pub/Sub can be practiced as a stand alone broadcaster.
 
     var $:PubSub = new PubSub();
 
-    $.sub('myEvent', function(eventName, data){
+    $.sub('myEvent', function(evt, data){
         trace(data);
+        // > outputs 'hello'
     });
 
     $.pub('myEvent', 'hello');
 
 Or with class inheritance in similar nature to JavaScript's [EventEmitter](https://github.com/Wolfy87/EventEmitter)
 
-    /* Apologies, example to be written */
+    public class Waiter extends PubSub {
+
+      public function Waiter(){
+        bringFood();
+      }
+
+      private function bringFood():void{
+        this.emit('foodready', 'cake');
+      }
+
+    }
+
+    // ...
+
+    var waiter:Waiter = new Waiter();
+
+    waiter.on('foodserved', function(evt, food){
+      man.eat(food);
+    })
 
 
 Subscriptions can be removed by passing the token they return.
