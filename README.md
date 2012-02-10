@@ -39,11 +39,11 @@ Or with class inheritance in similar nature to JavaScript's [EventEmitter](https
 
 Subscriptions can be removed by passing the token they return.
 
-   var token:Number = $.sub('myEvent', function(eventName, data){
-       // ...
-   });
+    var token:Number = $.sub('myEvent', function(eventName, data){
+        // ...
+    });
 
-   $.remove(token);
+    $.remove(token);
 
 This PubSub library provides alias methods that some programmers may prefer to
 use.
