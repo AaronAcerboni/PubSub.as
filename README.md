@@ -1,7 +1,14 @@
-# Usage
+# What's this?
 
 PubSub.as allows ActionScript 3 developers to practice the publish / subscribe pattern
 to a similar nature found in JavaScript implementations.
+
+PubSub.as is a port of [Morgan Rhoderick's PubSubJS](https://github.com/mroderick/PubSubJS).
+
+Do not take this port to be fully representative of what can be found in the
+[Morgan](http://roderick.dk/)'s original source code.
+
+# Usage
 
 Pub/Sub can be practiced as a stand alone broadcaster.
 
@@ -51,10 +58,3 @@ use.
 `PubSub.pub` == `PubSub.emit`
 
 `PubSub.sub` == `PubSub.on`
-
-# About
-
-PubSub.as is a port of [Morgan Rhoderick's PubSubJS](https://github.com/mroderick/PubSubJS).
-
-Do not take this port to be fully representative of what can be found in the
-[Morgan](http://roderick.dk/)'s original source code.
