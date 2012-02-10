@@ -49,6 +49,7 @@ This PubSub library provides alias methods that some programmers may prefer to
 use.
 
 `PubSub.pub` == `PubSub.emit`
+
 `PubSub.sub` == `PubSub.on`
 
 # About
