@@ -30,7 +30,7 @@ Or with class inheritance in similar nature to JavaScript's [EventEmitter](https
       }
 
       private function bringFood():void{
-        this.emit('foodready', 'cake');
+        this.emit('serve', 'cake');
       }
 
     }
@@ -39,7 +39,7 @@ Or with class inheritance in similar nature to JavaScript's [EventEmitter](https
 
     var waiter:Waiter = new Waiter();
 
-    waiter.on('foodserved', function(evt, food){
+    waiter.on('serve', function(evt, food){
       man.eat(food);
     })
 
